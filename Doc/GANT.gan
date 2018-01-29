@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="SKUP" company="Supinfo" webLink="http://" view-date="2016-12-01" view-index="0" gantt-divider-location="537" resource-divider-location="300" version="2.8.5" locale="fr">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="255" order="0"/>
+        <field id="tpd4" name="Date de début" width="131" order="1"/>
+        <field id="tpd5" name="Date de fin" width="130" order="2"/>
+        <option id="color.recent"><![CDATA[#00ff00 #00ffff #eeeeee #0000ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="209" order="0"/>
+        <field id="1" name="Rôle par défaut" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Etude du cahier des charges" color="#8cb6ce" meeting="false" start="2016-12-06" duration="10" complete="0" expand="true"/>
+        <task id="3" name="AutoFormation en responsive" color="#00ff00" meeting="false" start="2016-12-06" duration="16" complete="0" expand="true"/>
+        <task id="4" name="Choix d'hébérgement" color="#00ffff" meeting="false" start="2016-12-14" duration="3" complete="0" expand="true"/>
+        <task id="10" name="Etudes des solution concurentes" color="#8cb6ce" meeting="false" start="2016-12-12" duration="7" complete="0" expand="true"/>
+        <task id="8" name="Mise en place du design" color="#00ff00" meeting="false" start="2017-01-02" duration="19" complete="0" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="DOC - Installation and user's guide" color="#00ff00" meeting="false" start="2017-01-27" duration="5" complete="0" expand="true"/>
+        <task id="52" name="Contact entre menbres CRUD" color="#00ffff" meeting="false" start="2017-02-09" duration="7" complete="0" expand="true"/>
+        <task id="24" name="Comptes" color="#00ffff" meeting="false" start="2017-01-19" duration="15" complete="0" expand="true">
+            <depend id="52" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="31" name="Inscription utilisateur" color="#00ffff" meeting="false" start="2017-01-19" duration="4" complete="0" expand="true">
+            <depend id="26" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="26" name="Creation base de donnée Account" color="#00ffff" meeting="false" start="2017-01-25" duration="1" complete="0" expand="true">
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="27" name="Connexion utlisateur" color="#00ffff" meeting="false" start="2017-01-26" duration="2" complete="0" expand="true"/>
+        <task id="47" name="CRUD Comptes" color="#00ffff" meeting="false" start="2017-01-30" duration="5" complete="0" expand="true"/>
+        <task id="50" name="Profils autres utilisateurs" color="#00ffff" meeting="false" start="2017-02-06" duration="4" complete="0" expand="true"/>
+        <task id="54" name="Groupes" color="#00ffff" meeting="false" start="2017-02-15" duration="15" complete="0" expand="true"/>
+        <task id="68" name="Creation base données Groupes" color="#00ffff" meeting="false" start="2017-02-15" duration="2" complete="0" expand="true">
+            <depend id="57" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="57" name="CRUD Groupes" color="#00ffff" meeting="false" start="2017-02-17" duration="4" complete="0" expand="true"/>
+        <task id="74" name="Administration groupes" color="#00ffff" meeting="false" start="2017-02-23" duration="9" complete="0" expand="true"/>
+        <task id="79" name="Messages" color="#00ff00" meeting="false" start="2017-02-13" duration="30" complete="0" expand="true"/>
+        <task id="82" name="Creation base de données Message" color="#00ff00" meeting="false" start="2017-02-13" duration="3" complete="0" expand="true">
+            <notes><![CDATA[3 base de données pour Message entre utilisateurs, groupes et channels
+
+]]></notes>
+            <depend id="80" type="2" difference="0" hardness="Strong"/>
+            <depend id="89" type="2" difference="0" hardness="Strong"/>
+            <depend id="94" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="80" name="Messages Utilisateurs" color="#00ff00" meeting="false" start="2017-02-16" duration="5" complete="0" expand="true">
+            <depend id="89" type="2" difference="0" hardness="Strong"/>
+            <depend id="94" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="89" name="Messages Groupes" color="#00ff00" meeting="false" start="2017-02-23" duration="7" complete="0" expand="true"/>
+        <task id="94" name="Messages Channels" color="#00ff00" meeting="false" start="2017-02-23" duration="5" complete="0" expand="true"/>
+        <task id="100" name="Administration Messages" color="#00ff00" meeting="false" start="2017-03-07" duration="6" complete="0" expand="true"/>
+        <task id="103" name="Gestions des regex" color="#00ff00" meeting="false" start="2017-03-16" duration="5" complete="0" expand="true"/>
+        <task id="105" name="Envoie de fichiers" color="#00ffff" meeting="false" start="2017-03-16" duration="7" complete="0" expand="true"/>
+        <task id="110" name="DOC -  Database structure and optimization" color="#00ffff" meeting="false" start="2017-03-28" duration="2" complete="0" expand="true"/>
+        <task id="138" name="DOC - Bot API concept explanation" color="#00ffff" meeting="false" start="2017-04-11" duration="4" complete="0" expand="true"/>
+        <task id="141" name="DOC - System" color="#00ffff" meeting="false" start="2017-05-01" duration="4" complete="0" expand="true"/>
+        <task id="145" name="DOC - Storage and backup" color="#00ff00" meeting="false" start="2017-06-06" duration="3" complete="0" expand="true"/>
+        <task id="148" name="DOC - Network" color="#00ff00" meeting="false" start="2017-04-27" duration="3" complete="0" expand="true"/>
+        <task id="108" name="Recherche solution appel audio / video" color="#8cb6ce" meeting="false" start="2017-03-31" duration="25" complete="0" expand="true">
+            <depend id="114" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="114" name="Video Chat" color="#00ffff" meeting="false" start="2017-05-05" duration="20" complete="0" expand="true"/>
+        <task id="119" name="Diagrame de gant" color="#00ffff" meeting="false" start="2017-05-24" duration="2" complete="0" expand="true"/>
+        <task id="124" name="Bannissement IP" color="#00ff00" meeting="false" start="2017-05-15" duration="5" complete="0" expand="true"/>
+        <task id="127" name="DOC -  Installation and admin guide" color="#00ff00" meeting="false" start="2017-05-30" duration="2" complete="0" expand="true"/>
+        <task id="130" name="DOC - Ergonomics and ease of use" color="#00ff00" meeting="false" start="2017-06-02" duration="3" complete="0" expand="true"/>
+        <task id="135" name="Audio chat" color="#00ff00" meeting="false" start="2017-05-25" duration="12" complete="0" expand="true"/>
+        <task id="136" name="Presentation de la strtegie commercial" color="#8cb6ce" meeting="false" start="2017-06-09" duration="14" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
